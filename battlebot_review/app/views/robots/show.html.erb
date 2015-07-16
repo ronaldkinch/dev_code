@@ -1,0 +1,32 @@
+<p>
+  <strong>Robot:</strong>
+  <%= @robot.robot_name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @robot.bot_type %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @robot.team %>
+</p>
+
+<p>
+  <strong>Builder:</strong>
+  <%= @robot.builder %>
+</p>
+
+<p>
+  <strong>Wins:</strong>
+  <%= @robot.wins %>
+</p>
+
+<p>
+  <strong>Loses:</strong>
+  <%= @robot.loses %>
+</p>
+
+<%= link_to 'Edit', edit_robot_path(@robot) %> |
+<%= link_to 'Back', robots_path %>

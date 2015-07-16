@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  robot_name: MyString
+  bot_type: MyString
+  team: MyString
+  builder: MyString
+  wins: MyString
+  loses: MyString
+
+two:
+  robot_name: MyString
+  bot_type: MyString
+  team: MyString
+  builder: MyString
+  wins: MyString
+  loses: MyString

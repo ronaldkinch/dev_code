@@ -1,0 +1,29 @@
+<h1>BattleBots Review</h1>
+<%= link_to 'Enter BattleBot Information', new_robot_path %>
+<table>
+  <tr>
+    <th>Robot</th>
+    <th>Type</th>
+    <th>Team</th>
+    <th>Builder</th>
+    <th>Wins</th>
+    <th>Loses</th>
+    <th colspan="7"></th>
+  </tr>
+
+  <% @robots.each do |robot| %>
+    <tr>
+      <td><%= robot.robot_name %></td>
+      <td><%= robot.bot_type %></td>
+      <td><%= robot.team %></td>
+      <td><%= robot.builder %></td>
+      <td><%= robot.wins %></td>
+      <td><%= robot.loses %></td>
+      <td><%= link_to 'Show', robot_path(robot) %></td>
+      <td><%= link_to 'Edit', edit_robot_path(robot) %></td>
+      <td><%= link_to 'Destroy', robot_path(robot),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
